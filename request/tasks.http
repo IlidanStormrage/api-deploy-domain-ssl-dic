@@ -1,0 +1,27 @@
+
+###FIND ALL TASKS
+GET http://localhost:3000/api/tasks
+###FIND ALL TASKS PAGINATIONS
+GET http://localhost:3000/api/tasks?page=0&size=8
+###CREATE TASK
+POST  http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+"title": "hacer un sitio web en Ruby on rails",
+"description":"Trabajo en modo freelancer"
+
+}
+###GET BY ID
+GET http://localhost:3000/api/tasks/61bd5475a676256b3b20f773
+###DELETE
+DELETE http://localhost:3000/api/tasks/61b3d88b4497c90980791683
+###FIND TASK DONE
+GET http://localhost:3000/api/tasks/done
+###UPDATE TASK
+PUT http://localhost:3000/api/tasks/61bd52c2cf17c547167d9cb1
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en WIX"
+}

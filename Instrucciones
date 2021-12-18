@@ -1,0 +1,48 @@
+Como nube se usara:
+Clouding.io: Permite subir codigo al servidor y ejecutarlo.
+Babel se esta usando como dependencia de desarrollo
+
+npm init -y
+
+npm i express
+https://babeljs.io/setup
+npm i @babel/core @babel cli @babel/node @babel/preset-env -D
+*@babel/node (por que estas dentro de NODE)
+
+npx babel-node src/index.js (- npx para forzar)
+
+  "scripts": {
+    "start": "babel-node src/index.js"    (no hay necesidad de npx por que el script ya lo busca)
+  },
+
+  npm i nodemon -D
+  npm i mongoose
+  npm i dotenv  PARA VARIABLES DE ENTORNO
+  npm i morgan    un middelware
+  npm i cors   intercambio de recursos de origen
+  npm i mongoose-paginate-v2
+
+  - apiDocs para documentar
+  - express-promise-router    para controlar los trycatch
+  - express validator para validator
+  - joi validator para validar
+  versionKey: false, PARA QUE NO APARESCA '______v' en el modelo TASK
+  timestamps: true,  PARA QUE SALGA LA FECHA DE CREATE Y UPDATE
+
+  
+
+
+  rest client de VScode  (PLUGIN)
+
+
+  51:03 ME QUEDE EN LA ROUTE TASK.SAVE()
+  
+  https://www.youtube.com/watch?v=HEx2lVokPu0
+
+
+  ******** PRODUCTION***********
+  En produccion no debe usarse Babel, pero para compilar Babel tiene un comando en package.json
+      - "build": "babel src --out-dir dist"
+      - Luego instalar una dependencia de babel npm i -D @babel/plugin-transform-runtime
+
+      **** DEPLOY IN CLOUDING.IO
